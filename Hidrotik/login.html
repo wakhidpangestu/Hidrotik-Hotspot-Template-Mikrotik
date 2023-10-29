@@ -10,7 +10,7 @@
     <title>Hotspot | Login</title>
   </head>
   <body>
-    <!-- $(if chap-id) -->
+    $(if chap-id)
     <form name="sendin" action="$(link-login-only)" method="post">
       <input type="hidden" name="username" />
       <input type="hidden" name="password" />
@@ -29,7 +29,7 @@
         return false;
       }
     </script>
-    <!-- $(endif) -->
+    $(endif)
 
     <!-- prettier-ignore -->
     <div class="container">
@@ -37,7 +37,7 @@
         <div class="title-wrapper">
           <h1>Hello!</h1>
           <p>Login untuk menggunakan hotspot.</p>
-          <!-- <p>Gunakan internet dengan Bijak - <b>Wakhid Pangestu 12 TKJ 1</b>.</p> -->
+          <p>Gunakan internet dengan Bijak - <b>Wakhid Pangestu 12 TKJ 1</b>.</p>
         </div>
 
         <div class="login-method">
@@ -78,17 +78,17 @@
 
           <p id="qrCodeInfo" style="text-align: center; display: none;">Untuk masuk melalui QR Code, <a id="qrCodeScannerURL" href="">klik disini</a></p>
 
-          <!-- $(if error)
+          $(if error)
             <p class="error">$(error)</p>
-          $(endif) -->
+          $(endif)
 
           <button class="btn btn-primary" type="submit">Login</button>
         </form>
 
         <div class="form-footer">
-          <!-- $(if trial == 'yes')
+          $(if trial == 'yes')
             <p style="margin-bottom: 15px;">Mau beli tapi masih ragu? <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Coba GRATIS!</a></p>
-          $(endif) -->
+          $(endif)
           <p class="copy-right">Designed By <a target="_blank" href="https://wakhidpangestu.vercel.app">Wakhid Pangestu</a></p>
         </div>
       </div>
